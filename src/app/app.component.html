@@ -1,0 +1,50 @@
+<div id="ContenidoArriba">
+    <div class="float" id="primerContenido" [ngStyle]="{'background-image':img , 'animation-name':nombreanimacion}">
+        <header>
+            <h1 id="room">room</h1>
+            <ul id="navEscritorio">
+                <li class="border">Home</li>
+                <li class="border">Shop</li>
+                <li class="border">About</li>
+                <li class="border">Contact</li>
+            </ul>
+            <div id="cerrarNav" (click)="cerrarNav()" *ngIf="visible"><img src="../assets/icon-close.svg" alt="icon-close"></div>
+
+            <div (click)="abrirNav()" id="navTelefono">
+
+                <ul id="navDespleTelefono" *ngIf="visible">
+                    <li class="border">Home</li>
+                    <li class="border">Shop</li>
+                    <li class="border">About</li>
+                    <li class="border">Contact</li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <div id="contenidoSeccion" class="float" [ngStyle]="{'animation-name':txt}">
+        <h1>{{txtTitulo}}</h1>
+        <p>{{txtParrafo}}</p>
+        <h1 id="flechitaTXT" class="float">SHOP NOW</h1>
+        <img class="float" src="../assets/icon-arrow.svg" alt="icon1">
+        <br>
+        <div (click)="atras()" id="siguiente1" class="contenedorSiguiente">
+            <img src="../assets/icon-angle-left.svg" alt="icon2">
+        </div>
+        <div (click)="siguiente()" id="siguiente2" class="contenedorSiguiente">
+            <img src="../assets/icon-angle-right.svg" alt="icon3">
+        </div>
+    </div>
+</div>
+
+<div id="ContenidoAbajo">
+    <img class="float img1" src="../assets/image-about-dark.jpg" alt="icon4">
+    <div class="float">
+        <h1>About our furniture</h1>
+        <p>Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional
+            to contemporary styles or anything in between. Product specialists are available to help you create your dream space.</p>
+    </div>
+    <img class="float img2" src="../assets/image-about-light.jpg" alt="icon5">
+</div>
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/Jank1510">Jehan Carlos Hurtado</a>.
+</div>
