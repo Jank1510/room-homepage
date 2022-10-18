@@ -1,379 +1,258 @@
-@keyframes AnimationBorder {
-    from {
-        opacity: 0%;
-    }
-    to {
-        opacity: 100%;
-    }
-}
-
-@keyframes AnimationIMGSigueinte1 {
-    from {
-        margin-left: -60vw;
-        opacity: 20%;
-    }
-    to {
-        margin-left: 0vw;
-        opacity: 100%;
-    }
-}
-
-@keyframes AnimationIMGSigueinte2 {
-    from {
-        margin-left: 0vw;
-        opacity: 100%;
-    }
-    to {
-        margin-left: 100vw;
-        opacity: 20%;
-    }
-}
-
-@keyframes AnimationIMGAtras1 {
-    from {
-        margin-left: 100vw;
-        opacity: 20%;
-    }
-    to {
-        margin-left: 0vw;
-        opacity: 100%;
-    }
-}
-
-@keyframes AnimationIMGAtras2 {
-    from {
-        margin-left: 0;
-        opacity: 100%;
-    }
-    to {
-        margin-left: -60vw;
-        opacity: 20%;
-    }
-}
-
-@keyframes Animationtxt1 {
-    from {
-        opacity: 0%;
-    }
-    to {
-        opacity: 100%;
-    }
-}
-
-@keyframes Animationtxt2 {
-    from {
-        opacity: 100%;
-    }
-    to {
-        opacity: 0%;
-    }
-}
-
-.border:hover {
-    box-shadow: 0px 5px 0px -2px white;
-    padding-bottom: 0.7vw;
-    cursor: pointer;
-    animation-name: AnimationBorder;
-    animation-duration: 0.5s;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
+h1 {
+    color: black;
 }
 
 p {
-    color: hsl(0, 0%, 63%);
+    color: #a1a1a1;
 }
 
-#flechitaTXT:hover {
-    color: hsl(0, 0%, 63%);
+.navEscritorio {
+    display: flex;
+    align-items: center;
 }
 
-#siguiente2:hover {
-    background-color: hsl(0, 0%, 27%);
+.ulEscritorio {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    column-gap: 2rem;
 }
 
-#siguiente1:hover {
-    background-color: hsl(0, 0%, 27%);
+.ulEscritorio li {
+    cursor: pointer;
 }
 
-#ContenidoAbajo {
-    position: absolute;
+.ulEscritorio li:hover {
+    box-shadow: 0px 25px 0px -7px white;
+}
+
+.descripcion * {
+    margin: 0
+}
+
+.descripcion p {
+    margin: 1.5rem auto;
+}
+
+.shopImg {
+    max-width: 5rem;
+    height: 1rem;
+    margin: auto 2rem !important;
+}
+
+.h1shop {
+    font-size: 1rem;
+    letter-spacing: 6px;
+}
+
+.shop:hover {
+    opacity: 50%;
+}
+
+.contenidoAbajo div img {
     width: 100%;
 }
 
-@media (min-width: 360px) {
-    * {
-        list-style: none;
-        font-size: 13px;
-        color: black;
+.descripcionAbajo * {
+    margin: 0;
+}
+
+.descripcionAbajo {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+.descripcionPrincipal {
+    position: relative;
+}
+
+.botones div {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.botones div:hover {
+    opacity: 60%;
+}
+
+.botones div img {
+    height: 70%;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 1;
     }
-    #navEscritorio {
-        display: none;
-    }
-    #navTelefono {
-        display: block;
-        background-image: url('../assets/icon-hamburger.svg');
-        width: 29px;
-        background-size: 100% 100%;
-        height: 20px;
-        margin-left: 30px;
-        margin-top: -5px;
-        cursor: pointer;
-    }
-    #navDespleTelefono {
-        height: 11%;
-        background-color: white;
-        position: fixed;
-        top: -2%;
-        left: 0px;
-        width: 89.5%;
-        padding-left: 20%;
-        z-index: 3;
-        border-bottom: 1px solid #e5d8d8;
-        animation-name: Animationtxt1;
-        animation-duration: 0.5s;
-    }
-    #ContenidoArriba {
-        height: 100%;
-    }
-    #primerContenido {
-        background-image: url("../assets/desktop-image-hero-1.jpg");
-        height: 50%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        background-size: 100% 100%;
-        color: white;
-        animation-duration: 0.3s;
-    }
-    #contenidoSeccion {
-        padding: 0;
-        margin: 0;
-        width: 80%;
-        padding-top: 10%;
-        padding-left: 10%;
-        height: 50%;
-        animation-duration: 0.3s;
-    }
-    .contenedorSiguiente {
-        background-color: black;
-        position: absolute;
-        left: 66%;
-        width: 17%;
-        height: 9%;
-        top: 0;
-        margin-top: 41vh;
-        cursor: pointer;
-    }
-    #siguiente2 {
-        margin-left: 17%;
-    }
-    #contenidoSeccion div img {
-        margin-top: 33%;
-        margin-left: 38%;
-        width: 28%;
-    }
-    #contenidoSeccion h1 {
-        font-size: 27px;
-    }
-    #contenidoSeccion p {
-        font-size: 13px;
-    }
-    header {
-        display: inline-block;
-        margin-top: 10%;
-        margin-left: 0;
-    }
-    div header ul li {
-        float: left;
-        color: black;
-        margin-top: 12%;
-        margin-left: 9%;
-    }
-    #cerrarNav {
-        display: block;
-        z-index: 4;
-        position: fixed;
-        top: 0;
-        margin: 9.8%;
-    }
-    #cerrarNav img {
-        width: 22px;
-    }
-    #room {
-        font-size: 25px;
-        margin-top: -3%;
-        display: inline-block;
-        position: absolute;
-        margin-left: 40%;
-        color: white;
-    }
-    #flechitaTXT {
-        margin: 0;
-        margin-top: 0px;
-        font-size: 15px !important;
-        letter-spacing: 12px;
-        position: absolute;
-        cursor: pointer;
-        margin-top: 25px;
-    }
-    #contenidoSeccion img {
-        margin-left: 74%;
-        margin-top: 9%;
-        width: 50px;
-    }
-    .img1 {
-        width: 100%;
-    }
-    .img2 {
-        width: 100%;
-        height: auto;
-        position: absolute;
-        right: 0;
-    }
-    #ContenidoAbajo div {
-        width: 84%;
-        padding: 3vw;
-        padding-bottom: 3vw;
-        padding-bottom: 0;
-        margin: 8%;
-    }
-    #ContenidoAbajo div h1 {
-        font-size: 17px;
-        text-transform: uppercase;
-    }
-    .attribution {
-        font-size: 11px;
-        margin-left: 0;
-        z-index: 2;
-        position: absolute;
-        bottom: -88vh;
-        width: 100%;
-        text-align: center;
+
+    to {
+        opacity: 0;
     }
 }
 
-@media (min-width: 1281px) {
-    #cerrarNav {
+.animation {
+    animation-duration: 0.5s;
+}
+
+/*Vista pequeña*/
+@media (min-width:320px) {
+    main .contenidoArriba {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .contenidoArriba .productImg {
+        width: 100%;
+    }
+
+    .botones {
+        height: 15%;
+        display: grid;
+        grid-template-columns: 10% 10%;
+        position: absolute;
+        width: 100%;
+        top: -15%;
+        justify-content: end;
+    }
+
+    .contenidoAbajo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navSeccionEscritorio {
         display: none;
+        flex-direction: row;
     }
-    * {
-        list-style: none;
-        font-size: 1vw;
-        color: black;
+
+    .navSeccionMobile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 84vw;
+        margin: 8vw;
     }
-    #navEscritorio {
-        display: inline-block;
-        margin-left: 8vw;
+
+    .navSeccionMobile h1 {
+        margin: 0 auto
     }
-    #navTelefono {
-        display: none;
+
+    header {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        margin: 0;
+        color: white;
+        z-index: 1;
     }
-    #primerContenido {
-        background-image: url("../assets/desktop-image-hero-1.jpg");
-        height: 69vh;
-        width: 59vw;
+
+    .navSeccionMobile nav ul {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
         top: 0;
         left: 0;
-        background-size: 100% 100%;
-        color: white;
-        animation-duration: 0.3s;
-    }
-    .float {
-        float: left;
-    }
-    #ContenidoArriba {
-        height: 69vh;
-    }
-    #contenidoSeccion {
-        padding: 0;
+        list-style: none;
+        column-gap: 8vw;
+        padding: 10vw 0 5vw 15vw;
         margin: 0;
-        width: 28vw;
-        padding-top: 12vh;
-        padding-left: 6.25vw;
-        height: 57vh;
-        animation-duration: 0.3s;
+        width: 85vw;
+        justify-content: center;
+        background: white;
+        color: black;
+        font-weight: bold;
+        animation-name: opacity;
+        animation-duration: 0.5s;
+        animation-direction: reverse;
     }
-    .contenedorSiguiente {
-        background-color: black;
+
+    .shop {
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        margin: 9vw 0 !important;
+    }
+
+    .descripcion {
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 6vw;
+        justify-content: center;
+        margin-top: 8vw;
+    }
+
+}
+
+/*vista grande*/
+@media (min-width:960px) {
+
+    main .contenidoArriba {
+        display: grid;
+        grid-template-columns: 54vw 46vw;
+    }
+
+    main .contenidoArriba .productImg {
+        width: 54vw;
+    }
+
+    .botones {
+        height: 15%;
+        display: grid;
+        grid-template-columns: 6.5vw 6.5vw;
         position: absolute;
-        left: 59vw;
-        width: 4.9vw;
-        height: 4.9vw;
+        width: 100%;
         bottom: 0;
-        margin-bottom: 31vh;
-        cursor: pointer;
         top: auto;
+        justify-content: inherit;
     }
-    #siguiente2 {
-        margin-left: 4.9vw;
+
+    .contenidoAbajo {
+        display: grid;
+        grid-template-columns: 33vw 34vw 33vw;
     }
-    #contenidoSeccion div img {
-        margin-top: 0.6vw;
-        margin-left: 1.5vw;
-        width: 2vw;
+
+    .navSeccionEscritorio {
+        display: flex;
+        flex-direction: row;
     }
-    #contenidoSeccion h1 {
-        font-size: 2.5vw;
+
+    .navSeccionMobile {
+        display: none;
+        flex-direction: row;
     }
-    #contenidoSeccion p {
-        font-size: 1vw;
-    }
+
     header {
-        display: inline-block;
-        margin-top: 3vw;
-        margin-left: -1.5vw;
-    }
-    div header ul li {
-        float: left;
-        margin-left: 3vw;
-        color: white;
-        margin-top: 0;
-    }
-    #room {
-        font-size: 1.8vw;
-        margin-top: 0.2vw;
-        display: inline-block;
+        display: flex;
+        flex-direction: row;
         position: absolute;
-        margin-left: 6vw;
+        margin: 2rem;
         color: white;
+        z-index: 1;
     }
-    #flechitaTXT {
-        margin: 0;
-        font-size: 1vw !important;
-        letter-spacing: 0.8vw;
-        position: absolute;
+
+    .shop {
+        display: flex;
+        flex-direction: row;
         cursor: pointer;
+        margin: 0 !important;
     }
-    #contenidoSeccion img {
-        margin-left: 14vw;
-        margin-top: 1vw;
-        width: 3vw;
-    }
-    .img1 {
-        width: 33.5vw;
-    }
-    .img2 {
-        width: 31vw;
-        height: 100%;
-        position: absolute;
-        right: 0;
-    }
-    #ContenidoAbajo div {
-        width: 32vw;
-        padding: 3vw;
-        padding-bottom: 0;
+
+    .descripcion {
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 6vw;
+        justify-content: center;
         margin: 0;
-    }
-    #ContenidoAbajo div h1 {
-        font-size: 1.3vw;
-        text-transform: uppercase;
-    }
-    .attribution {
-        font-size: 1vw;
-        margin-left: 37%;
-        bottom: -6vh;
-        width: auto;
     }
 }
