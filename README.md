@@ -11,3 +11,6 @@ https://jank1510.github.io/room-homepage/
   <img src="https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_900/Screenshots/enkjnfuufr681v1vlec6.jpg" alt="figma"/>
 
 </p>
+
+# Version angular
+ local version (13.0.4)
